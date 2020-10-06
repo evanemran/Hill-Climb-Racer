@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    public float fuel = 1;
+    public float tscore = 0;
+    public float fuelconsumption = 0.1f;
     public Rigidbody2D frontTire;
     public Rigidbody2D backTire;
     public Rigidbody2D carRigidbody;
     public float carTorque = 10;
+    public UnityEngine.UI.Image image;
+    public UnityEngine.UI.Text score;
 
     public float speed = 20;
 
@@ -22,11 +27,18 @@ public class CarController : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxis("Horizontal");
+        image.fillAmount = fuel;
     }
     private void FixedUpdate()
     {
-        backTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
-        frontTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
-        carRigidbody.AddTorque(-movement * carTorque * Time.fixedDeltaTime);
+        if (fuel > 0)
+        {
+            backTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
+            frontTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
+            carRigidbody.AddTorque(-movement * carTorque * Time.fixedDeltaTime);
+        }
+       
+
+        fuel -= fuelconsumption * Mathf.Abs(movement) * Time.fixedDeltaTime;
     }
 }

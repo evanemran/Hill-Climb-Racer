@@ -60,8 +60,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AddFuel.cs" />
     <Compile Include="Assets\CarController.cs" />
+    <Compile Include="Assets\Coin25.cs" />
     <Compile Include="Assets\Follow.cs" />
+    <Compile Include="Assets\RestartScene.cs" />
+    <Reference Include="Unity.2D.SpriteShape.Editor">
+      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -70,15 +76,6 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
@@ -89,8 +86,14 @@
     <Reference Include="Unity.2D.SpriteShape.Runtime">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
