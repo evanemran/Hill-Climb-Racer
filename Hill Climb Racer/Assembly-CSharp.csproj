@@ -60,11 +60,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AddFuel.cs" />
-    <Compile Include="Assets\CarController.cs" />
-    <Compile Include="Assets\Coin25.cs" />
-    <Compile Include="Assets\Follow.cs" />
-    <Compile Include="Assets\RestartScene.cs" />
+    <Compile Include="Assets\Scripts\AddFuel.cs" />
+    <Compile Include="Assets\Scripts\CarController.cs" />
+    <Compile Include="Assets\Scripts\Coin100Script.cs" />
+    <Compile Include="Assets\Scripts\Coin25.cs" />
+    <Compile Include="Assets\Scripts\Coin500Script.cs" />
+    <Compile Include="Assets\Scripts\DistanceScript.cs" />
+    <Compile Include="Assets\Scripts\FinishScript.cs" />
+    <Compile Include="Assets\Scripts\Follow.cs" />
+    <Compile Include="Assets\Scripts\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\RestartScene.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
+    <Compile Include="Assets\Scripts\SoundScript.cs" />
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>E:/Programming/UnityWorks/Hill Climb Racer/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
