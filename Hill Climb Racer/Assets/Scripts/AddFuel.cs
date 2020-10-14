@@ -9,6 +9,7 @@ public class AddFuel : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         carController.fuel = 1;
+        carController.currentFuel = 1;
         SoundScript.PlaySound("fuel");
         Destroy(gameObject);
     }

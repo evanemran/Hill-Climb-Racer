@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\DistanceScript.cs" />
     <Compile Include="Assets\Scripts\FinishScript.cs" />
     <Compile Include="Assets\Scripts\Follow.cs" />
+    <Compile Include="Assets\Scripts\FuelBarScript.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PauseScript.cs" />
     <Compile Include="Assets\Scripts\RestartScene.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />

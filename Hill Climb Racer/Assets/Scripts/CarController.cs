@@ -13,33 +13,38 @@ public class CarController : MonoBehaviour
     public float carTorque = 10;
     public UnityEngine.UI.Image image;
     public UnityEngine.UI.Text score;
-
+    public FuelBarScript fuelBarScript;
     public float speed = 20;
-
+    public float maxFuel = 1f;
+    public float currentFuel;
     private float movement;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentFuel = maxFuel;
+        fuelBarScript.setMaxFuel(maxFuel);
     }
 
     // Update is called once per frame
     void Update()
     {
         movement = Input.GetAxis("Horizontal");
-        image.fillAmount = fuel;
+        //image.fillAmount = currentFuel;
+        
+        
     }
     private void FixedUpdate()
     {
-        if (fuel > 0)
+        if (currentFuel > 0)
         {
             backTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
             frontTire.AddTorque(-movement * speed * Time.fixedDeltaTime);
             carRigidbody.AddTorque(-movement * carTorque * Time.fixedDeltaTime);
             
         }
-       
 
-        fuel -= fuelconsumption * Mathf.Abs(movement) * Time.fixedDeltaTime;
+
+        currentFuel -= fuelconsumption * Mathf.Abs(movement) * Time.fixedDeltaTime;
+        fuelBarScript.SetFuel(currentFuel);
     }
 }
